@@ -1,0 +1,14 @@
+#TEMPLATE FOR DIFFERENT ENVIRONMENT-SPECIFIC CONFIGURATIONS
+
+# Datasource configuration
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: {mode}
+  datasource:
+    initialization-mode:
+      {mode}
+    platform: {db_type}
+    url: {url}
+    username: {username}
+    password: {password}
